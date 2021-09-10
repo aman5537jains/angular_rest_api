@@ -1,14 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { RestApiComponent } from './rest-api/rest-api.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RestApiComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
